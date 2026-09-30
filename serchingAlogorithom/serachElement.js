@@ -11,4 +11,4 @@ for(let i=0;i<arr.length;i++){
 }
 
 if(index==-1) console.log("not found")
-    else console.log(`element founded of index ${index}`)
+    else console.log(`element founded index of ${index}`)
