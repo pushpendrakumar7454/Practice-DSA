@@ -1,14 +1,16 @@
-let arr=[2,32,35,31,2,455,45]
+let arr=[3,4,12,332,34,53]
+
 let n=arr.length
 
-for(let i=0;i<n-1;i++){
+for(let i=0;i<n;i++){
     let key=arr[i]
     let j=i-1
+
     while(j>=0 && arr[j]>key){
         arr[j+1]=arr[j]
         j--
     }
-    arr[j+1]=key
+   arr[j+1]=key
 }
 
 console.log(arr)
