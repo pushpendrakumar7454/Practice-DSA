@@ -1,7 +1,7 @@
 let s='naman'
+let i=0;
+let j=s.length-1
 
-let i=0; 
-let j=s.lenght-1
 let isPalindrome=true
 
 while(i<j){
@@ -9,6 +9,8 @@ while(i<j){
         isPalindrome=false
         break
     }
+    i++
+    j--
 }
 
-console.log(isPalindrome?"String is Palindrome":"String is Not Palindrome")
+console.log(isPalindrome?"Palindrome":"notPalindrome")
