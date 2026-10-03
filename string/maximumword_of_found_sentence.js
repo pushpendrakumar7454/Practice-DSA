@@ -1,5 +1,4 @@
 const s = "I am learning JavaScript programming";
-
 let arr=s.split(" ")
 let maxCount=""
 
@@ -8,4 +7,5 @@ for(let i=0;i<arr.length;i++){
         maxCount=arr[i]
     }
 }
+
 console.log(maxCount)
