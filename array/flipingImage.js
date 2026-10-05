@@ -2,16 +2,17 @@ let image=[[1,0,1],[0,0,1]]
 
 function flipingImage(image){
     for(let i=0;i<image.length;i++){
-      let arr=image[i]
-      let k=0;
-      let j=arr.length-1
-      while(k<j){
-        let temp=arr[k]
-        arr[k]=arr[j]
-        arr[j]=temp
-        k++
-        j--
-      }
+        let arr=image[i]
+        let k=0;
+        let j=arr.length-1
+
+        while(k<j){
+            let temp=arr[k]
+            arr[k]=arr[j]
+            arr[j]=temp
+            k++
+            j--
+        }
     }
 
     for(let i=0;i<image.length;i++){
