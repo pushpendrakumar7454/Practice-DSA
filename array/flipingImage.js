@@ -20,7 +20,9 @@ function flipingImage(image){
             image[i][j]=image[i][j]==1?0:1
         }
     }
+
     return image
 }
+
 
 console.log(flipingImage(image))
