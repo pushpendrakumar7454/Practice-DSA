@@ -5,6 +5,7 @@ let matrix = [
 ]
 
 function rotateImage(matrix){
+    //transpose
     for(let i=0;i<matrix.length;i++){
         for(let j=i;j<matrix[i].length;j++){
             let temp=matrix[i][j]
@@ -12,7 +13,7 @@ function rotateImage(matrix){
             matrix[j][i]=temp
         }
     }
-
+    //reverse
     for(let i=0;i<matrix.length;i++){
         let k=0;
         let j=matrix[i].length-1
