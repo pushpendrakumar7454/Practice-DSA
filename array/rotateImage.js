@@ -12,6 +12,7 @@ function rotateImage(matrix){
             matrix[j][i]=temp
         }
     }
+
     for(let i=0;i<matrix.length;i++){
         let k=0;
         let j=matrix[i].length-1
@@ -23,7 +24,6 @@ function rotateImage(matrix){
             j--
         }
     }
-
     return matrix
 }
 
