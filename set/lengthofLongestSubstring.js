@@ -1,12 +1,10 @@
-function lengthOfLogestSubstring(str){
+function lengthOfLongestSubstring(str){
     let fre={}
-    let j=0
     let count=0
-    let maxLength=0
-
+    let j=0
+    let maxString=0
     for(let i=0;i<str.length;i++){
         let word=str[i]
-        
         if(fre[word]){
             fre[word]++
         }else{
@@ -17,16 +15,14 @@ function lengthOfLogestSubstring(str){
             let remove=str[j]
             fre[remove]--
             j++
-
-            
         }
         count=i-j+1
-            if(count>maxLength){
-                maxLength=count
-            }
+        if(count>maxString){
+            maxString=count
+        }
     }
-    
-    return maxLength
+    return maxString
+
 }
 
-console.log(lengthOfLogestSubstring("aaab"))
+console.log(lengthOfLongestSubstring("aabdef"))
