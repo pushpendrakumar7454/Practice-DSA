@@ -3,6 +3,7 @@ function lengthOfLongestSubstring(str){
     let count=0
     let j=0
     let maxString=0
+    
     for(let i=0;i<str.length;i++){
         let word=str[i]
         if(fre[word]){
