@@ -4,7 +4,7 @@ function GCD(a,b){
     if(a>b) return GCD(a-b,b)
     return GCD(a,b-a)
 }
-console.log(GCD(20,36))
+console.log(GCD(20,36)) //O(max(a,b))
 
 // function GCD(a,b,n){
 //     if(n===1) return 1
@@ -12,4 +12,4 @@ console.log(GCD(20,36))
 //     return GCD(a,b,n-1)
 // }
 
-// console.log(GCD(20,36,Math.min(36,20)))
+// console.log(GCD(20,36,Math.min(36,20))) //O(min(a,b))
