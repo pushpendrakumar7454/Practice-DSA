@@ -1,5 +1,5 @@
-let arr1=[3,4,5,6,7]
-let arr2=[1,2,4,5,6]
+let arr1=[1,2,4,5,6,7]
+let arr2=[3,4,8,9]
 let temp=[]
 let i=0,j=0,k=0
 
@@ -14,5 +14,4 @@ while(i<arr1.length){
 while(j<arr2.length){
     temp[k++]=arr2[j++]
 }
-
-console.log(temp)
+console.log(temp);
