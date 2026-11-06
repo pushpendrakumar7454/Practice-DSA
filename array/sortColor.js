@@ -6,22 +6,25 @@ function swap(arr, i, j) {
     arr[j] = temp;
 }
 
-let i = 0, j = 0, k = arr.length - 1;
 
-while (j <= k) {
+function sortColor(arr){
+    let i=0
+    let j=0
+    let k=arr.length-1
 
-    if (arr[j] == 0) {
-        swap(arr, i, j);
-        i++;
-        j++;
-
-    } else if (arr[j] == 2) {
-        swap(arr, j, k);
-        k--;
-
-    } else {
-        j++;
+    while(j<=k){
+        if(arr[j]==0){
+            swap(arr,i,j)
+            i++
+            j++
+        }else if(arr[j]==2){
+            swap(arr,j,k)
+            k--
+        }else{
+            j++
+        }
     }
+    return arr
 }
 
-console.log(arr);
+console.log(sortColor(arr))
